@@ -53,6 +53,10 @@ main {
     
     .navbar{
         background-color: var(--pink-skin);
+        position: fixed !important;
+        position: static;
+        z-index: 1;
+        width: 100%;
     }
     .nav-item>a{
         color: white;
@@ -142,7 +146,11 @@ main {
     text-align: center;
 }
 
-    
+@media only screen and (max-width: 700px) {
+	.footer--main {
+		display: none;
+	}
+}
 
     .b-example-divider {
         height: 3rem;
@@ -156,4 +164,3 @@ main {
         vertical-align: -.125em;
         fill: currentColor;
       }
-      
